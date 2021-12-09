@@ -1,0 +1,151 @@
+/** @format */
+
+/*-------------------------------------------*\
+             UserLogin SytleSheet
+\*-------------------------------------------*/
+
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&family=Open+Sans&display=swap");
+
+/* General css */
+:root {
+  --font-size: 40px;
+  --normal-font-size: 35px;
+  --primary: #2f81ed;
+  --text-color: #2b3743;
+  --main-cta: #194785;
+  --notifyoverlay: #2f81ed;
+  --card-color: #f4f4f4;
+  --graph-alt: #2f82ed;
+  --font-family: "Heebo", sans-serif;
+  --place-holder-font: 12px;
+  --place-holder-color: #c4c4c4;
+  --border: #bfbfbf;
+  --alert: #ff0707;
+}
+
+.main_container {
+  background: transparent
+    linear-gradient(90deg, #091e3a 0%, #2f80ed 50%, #2d9ee0 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 12px;
+  flex-direction: column;
+  flex-wrap: nowrap !important;
+}
+
+.login_body_container {
+  background-color: white;
+  max-width: 884px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.login_body_container .software {
+  font-size: var(--font-size);
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: var(--font-family);
+  font-weight: 500;
+  padding-top: 62px;
+}
+
+.login_body_container .welcome {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+
+.input-fields {
+  padding: 31px 190px;
+}
+
+.input-fields input {
+  height: 62px;
+  border: 1px solid var(--border);
+  border-radius: 60px;
+  font-size: var(--place-holder-font);
+  width: 100%;
+  padding: 24px 48px;
+}
+
+.input-fields input::placeholder {
+  font-size: var(--place-holder-font);
+  color: var(--place-holder-color);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.input-fields .envalop,
+.input-fields .lock {
+  position: absolute;
+  color: var(--place-holder-color);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.password-field {
+  padding-top: 20px;
+}
+
+.input-fields label {
+  color: var(--alert);
+  font-family: var(--font-family);
+}
+
+.input-fields .forget_pass {
+  color: var(--text-color);
+}
+
+.input-fields .signin {
+  margin-top: 35px;
+  background-color: var(--primary);
+  color: var(--card-color);
+  width: 100%;
+  border-radius: 40px;
+  padding-top: 10px;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.input-fields .signin:hover {
+  color: black;
+}
+
+.input-fields .signup {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid var(--primary);
+}
+
+/* media queries start from here */
+@media (max-width: 1025px) {
+  .input-fields {
+    padding: 31px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .input-fields {
+    padding: 31px 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .input-fields label {
+    font-size: 12px;
+  }
+
+  .input-fields .forget_pass {
+    gap: 4px !important;
+    font-size: 12px;
+  }
+}
